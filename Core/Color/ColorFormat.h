@@ -6,7 +6,7 @@
 Common_NameManglingGuard_Begin
 
 /// TODO: Expand this like QColor
-typedef enum : UInt8
+typedef enum ColorFormat : UInt8
 {
     ColorFormat_RGBA8888,
 } ColorFormat;

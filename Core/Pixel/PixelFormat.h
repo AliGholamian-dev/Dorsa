@@ -5,7 +5,7 @@
 
 Common_NameManglingGuard_Begin
 
-typedef enum : UInt8
+typedef enum PixelFormat : UInt8
 {
     PixelFormat_RGB565,
 } PixelFormat;

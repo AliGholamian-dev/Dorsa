@@ -8,7 +8,7 @@
 Common_NameManglingGuard_Begin
 
 Packed_Struct_Start
-typedef struct Packed_Struct_Attribute
+typedef struct Packed_Struct_Attribute Color
 {
     UInt8 red;
     UInt8 green;

@@ -7,7 +7,7 @@
 Common_NameManglingGuard_Begin
 
 Packed_Struct_Start
-typedef struct Packed_Struct_Attribute
+typedef struct Packed_Struct_Attribute Size2DUInt16
 {
     UInt16 width;
     UInt16 height;
