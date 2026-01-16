@@ -1,18 +1,22 @@
 #pragma once
 
-#include "Common/Packed.h"
+#include "Core/Color/Color.h"
 #include "Common/NameManglingGuard.h"
 
 Common_NameManglingGuard_Begin
 
-Packed_Struct_Start
-typedef struct Packed_Struct_Attribute DorsaInitializationInfo
-{
-    /// TODO: In future add platform calls (e.g. a function to query for all available devices)
-} DorsaInitializationInfo;
-Packed_Struct_End
+/// TODO: This is an abstraction on top of Graphics, such that in each function it may call multiple GL functions like raylib
+/// Follow raylibs design to an extent, for example raylib calls two GL functions
+/// TODO: Enrich the API such that all function take in specific state and structs
 
-void Dorsa_Init(const DorsaInitializationInfo* dorsaInitializationInfo);
+void Dorsa_Init();
 void Dorsa_DeInit();
+
+/// TODO: Add device query and selection API
+
+void Dorsa_BeginDrawing();
+void Dorsa_EndDrawing();
+
+void Dorsa_Clear(const Color* clearColor);
 
 Common_NameManglingGuard_End

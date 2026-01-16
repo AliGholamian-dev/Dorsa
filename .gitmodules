@@ -1,3 +1,6 @@
 [submodule "Vendor/Common"]
 	path = Vendor/Common
 	url = https://github.com/AliGholamian-dev/Common.git
+[submodule "Vendor/SDL"]
+	path = Vendor/SDL
+	url = https://github.com/libsdl-org/SDL.git

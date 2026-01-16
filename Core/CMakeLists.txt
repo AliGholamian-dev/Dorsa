@@ -10,7 +10,10 @@ add_library(${PROJECT_NAME} STATIC
         Color/ColorRGBA8888.h
         Color/Color.h
         Color/Color.c
-        Dorsa.h)
+        Dorsa.h
+        Dorsa.c
+        Platform/Platform.h
+        Graphics/Graphics.h)
 
 target_link_libraries(${PROJECT_NAME} PUBLIC Common)
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_LIST_DIR}/..)
